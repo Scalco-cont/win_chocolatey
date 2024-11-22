@@ -1,5 +1,5 @@
 ---
-- name: Exemplo de uso do módulo win_chocolatey no AWX
+- name: Exemplo de uso do módulo win_chocolatey
   hosts: all
   become: false
   gather_facts: false
@@ -9,6 +9,6 @@
       - notepadplusplus
   tasks:
     - name: Instalar pacotes usando Chocolatey
-      community.windows.win_chocolatey:
+      chocolatey.chocolatey.win_chocolatey:
         name: "{{ packages }}"
         state: present
