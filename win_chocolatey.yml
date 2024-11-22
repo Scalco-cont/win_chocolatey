@@ -1,14 +1,4 @@
----
-- name: Exemplo de uso do módulo win_chocolatey no AWX
-  hosts: all
-  become: false
-  gather_facts: false
-  vars:
-    packages:
-      - git
-      - notepadplusplus
-  tasks:
-    - name: Instalar pacotes usando Chocolatey
-      community.windows.win_chocolatey:
-        name: "{{ packages }}"
-        state: present
+- name: Ensure 7-Zip is installed through Chocolatey
+  win_chocolatey:
+    name: 7zip
+    state: present
