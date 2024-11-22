@@ -1,7 +1,7 @@
 ---
 - name: win_chocolatey module demo
   hosts: all
-  become false
+  become: false
   gather_facts: false
   vars:
     - packages:
