@@ -1,8 +1,4 @@
 ---
-- name: Ensure 7-Zip is installed through Chocolatey
-  hosts: all
-  tasks:
-    - name: Install 7-Zip using Chocolatey
-      win_chocolatey:
-        name: 7zip
-        state: present
+collections:
+  - name: community.windows
+    version: latest
