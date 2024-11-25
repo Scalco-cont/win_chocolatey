@@ -7,6 +7,6 @@
       - notepadplusplus
   tasks:
     - name: Instalar pacotes
-      community.windows.win_chocolatey:
+      community.general.win_chocolatey:
         name: "{{ packages }}"
         state: present
