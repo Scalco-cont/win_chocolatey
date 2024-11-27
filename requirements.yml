@@ -1,0 +1,8 @@
+collections:
+  - name: community.windows
+    version: 1.7.0
+  - name: ansible.posix
+roles:
+  - name: geerlingguy.apache
+    version: 3.3.0
+    source: https://galaxy.ansible.com
